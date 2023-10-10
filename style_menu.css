@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+--color_body:#7fa99b;
+--color_th:#222831;
+--color_td:#f2f2f2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family:'Roboto', sans-serif ;
+    font-size: medium;
+    background-color:var(--color_body)
+}
+
+table{
+    width: 100%;
+    border-spacing: 0.5rem 0;
+}
+
+table td:first-child{
+    width: 20%;
+}
+
+th{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color:var(--color_th);
+    color: #ffffff; 
+    padding: 1rem;
+}
+
+ol li{
+    padding: 1rem;
+    margin:0 0 0 2rem;
+}
+
+td{
+    background-color:var(--color_td);
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.ul_postres li{
+    padding-top: 2rem;
+    margin: 1rem;
+}
+
+.ul_pp li{
+    padding-top: 1rem;
+    margin:0;
+}
+
+.ul_entradas li{
+    padding-top: 0.2rem;
+}
+
+h1{
+    font-size: 3rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Oleo Script', cursive; 
+    text-shadow: 0.3rem 0.05rem #797878;
+    font-style: oblique;
+}
+
+.foto img{
+    width: 55rem;
+    height: 30rem;
+    margin:1rem auto 3rem;
+}
+
+header{
+    background-color:#393e46;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+}
+
+div.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.logo a img{
+    height: 3.5rem;
+    margin-top: 0.7rem;
+}
+
+div.logo a{
+    font-size: 2rem;
+    font-family: 'Oleo Script', cursive;
+    text-decoration: none;
+    color: #f0f8ff;
+    text-shadow: 0.25rem 0.25rem #000000;
+    margin-left: 2rem;
+}
+
+div.redes img{
+    height: 2rem;
+    margin:0.5rem;
+}
+
+div.redes{
+    padding-top: 1rem;
+}
+
+
+button{
+    font-size: medium;
+    font-family: 'Roboto', sans-serif ;
+    width: 15rem;
+    height: 2rem;
+    display:block;
+    text-align: center;
+    margin: 3rem auto;
+    background-color:#055e68;
+}
+
+button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button:hover{
+    background-color:rgb(15, 70, 73)
+}
+
+.copyright{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.hamburguesa img {
+    height: 3rem;
+}
+
+.hamburguesa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-hamburguesa li a{
+    display: block;
+    padding: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-hamburguesa li a:hover{
+    color:#7fa99b;
+    transform: scale(1.2, 1.5);
+}
+
+.hamburguesa ul{
+    list-style: none;
+    position: absolute;
+    margin-top: 26rem;
+    background-color:#393e46;
+}
+
+.checkbox{
+    cursor: pointer;
+    transform: scale(3, 3);
+    position:absolute;
+    opacity: 0;
+}
+
+.hamburguesa input{
+    position: absolute;
+    margin-top: 1.5rem;
+}
+
+ul.menu-hamburguesa{
+    display: none;
+}
+
+.checkbox:checked ~ ul.menu-hamburguesa{
+display: block;
+}
+
+@media screen and (min-width:568px) and (max-width:767px) {
+.foto img{
+max-width: 100%;
+height: auto;
+}
+ 
+div.redes img{
+    height: 1.5rem;
+}
+
+div.logo a{
+    font-size: 1.4rem;
+}
+    
+.hamburguesa ul{
+    margin-top: 28rem;
+    margin-left: 7rem;
+}
+}
+
